@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Appliance Energy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" id="nav-logo">
+      <img src="PowerIcon.png" alt="Power Logo" id="logo">
+    </a>
+    <a href="index.html" id="nav-home">Home</a>
+    <a href="televisions.html" id="nav-televisions">Televisions</a>
+    <a href="about.html" id="nav-about">About Us</a>
+  </nav>
+
+  <main>
+    <h1>D3 Charts Dashboard</h1>
+    <p>Welcome to my interactive data visualization dashboard. Below are four different charts exploring TV energy consumption and Australian spot power prices.</p>
+
+    <!-- Chart 1: Scatter Plot -->
+    <section class="chart-box">
+      <h2>TV Energy Consumption vs Star Rating</h2>
+      <div id="scatter-container" class="responsive-svg-container"></div>
+    </section>
+
+    <!-- Chart 2: Donut Chart -->
+    <section class="chart-box">
+      <h2>Energy Consumption by Screen Technology (All Sizes)</h2>
+      <div id="donut-container" class="responsive-svg-container"></div>
+    </section>
+
+    <!-- Chart 3: Bar Chart -->
+    <section class="chart-box">
+      <h2>Energy Consumption by Screen Tech (55-inch TVs Only)</h2>
+      <div id="bar-container" class="responsive-svg-container"></div>
+    </section>
+
+    <!-- Chart 4: Line Chart -->
+    <section class="chart-box">
+      <h2>Australian Spot Power Prices (1998 - 2024)</h2>
+      <div id="line-container" class="responsive-svg-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Zi Qian JEE – GenAI acknowledgment: Code structure assisted by AI.</p>
+  </footer>
+
+  <!-- Load D3 first, then your D3 code file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script src="scatter.js"></script>
+  <script src="donut.js"></script>
+  <script src="bar.js"></script>
+  <script src="line.js"></script>
+  <script src="script.js"></script>
+
+  <!--for T04-4 to 7
+  <script src="t04-5-bars.js"></script>
+  <script src="t04-4-load.js"></script>
+  -->
+
+  <!-- for T04-3 only
+   <script src="t04-3-bars.js"></script>
+  -->
+
+  <!-- for T04-2 only
+  <script src="energy-d3.js"></script>
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
